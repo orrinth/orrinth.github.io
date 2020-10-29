@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+nav {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: lightgray;
+    min-height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 30px 70px black;
+    z-index: 10;
+}
+
+nav h1 {
+    color: black;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 0 1rem;
+}
+
+nav ul {
+    width: 35rem;
+    height: inherit;
+    margin: 0 auto;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul li a {
+    height: 100%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    transition: color 0.2s ease-out, transform 0.2s ease-out;
+}
+
+nav ul li a:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+main {
+    flex: 1 0 auto;
+    min-height: 100%;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+section#home {
+    height: 46rem;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("computerbg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    position: relative;
+}
+
+section#home h1 {
+    height: 5rem;
+    margin: 0 auto;
+    position: relative;
+    top: calc(50% - 2.5rem);
+    font-size: 4.7rem;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    z-index: 1;
+}
+
+section#about {
+    min-height: 50rem;
+    background: #333;
+    position: relative;
+}
+
+section#about h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-style: oblique;
+    padding-top: 5rem;
+}
+
+section#about p {
+    text-align: center;
+    text-align-last: center;
+    width: 50rem;
+    font-size: 2rem;
+    margin: 1rem auto;
+    line-height: 1.5;
+}
+
+section#about .skill-icons {
+    width: 21.5rem;
+    position: absolute;
+    bottom: 5rem;
+    left: calc(50% - 10.75rem);
+}
+
+.fa-html5 {
+    color: orangered;
+    font-size: 5rem;
+    margin: 0 1.5rem;
+}
+
+.fa-css3-alt {
+    color: #2690d4;
+    font-size: 5rem;
+    margin: 0 1.5rem;
+}
+
+.fa-js {
+    color: gold;
+    font-size: 5rem;
+    margin: 0 1.5rem;
+}
+
+section#portfolio {
+    background: gray;
+    min-height: 70rem;
+    padding-bottom: 5rem;
+}
+
+section#portfolio h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-style: oblique;
+    padding-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+section#portfolio .html-css-js {
+    max-width: 77rem;
+    min-height: 70rem;
+    margin: 0 auto;
+    position: relative; 
+    display: grid;
+    grid-template-columns: repeat(3, 390px);
+    grid-template-rows: repeat(4, 225px);
+    grid-gap: 2rem;
+}
+
+section#portfolio .html-css-js .project {
+    border: 5px solid #333;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top ;
+    padding-bottom: 5rem;
+    font-size: 1.2rem;
+    position: relative;
+    box-shadow: 0 5px 20px black;
+}
+
+section#portfolio .html-css-js .project h3 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+section#portfolio .html-css-js .project hr {
+    background: white;
+    border: none;
+    width: 14rem;
+    height: 1px;
+    margin: 0.5rem auto;
+}
+
+section#portfolio .html-css-js .project-description {
+    font-style: italic;
+}
+
+section#portfolio .html-css-js .project .site-links {
+    width: 10rem;
+    height: 5rem;
+    position: absolute;
+    top: calc(50% - 2.5rem);
+    left: calc(50% - 5rem);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    width: 10rem;
+    height: 2rem;
+    border: 2px solid white;
+    border-radius: 10rem;
+    background: rgba(0,0,0,0);
+    cursor: pointer;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 0 auto 0.5rem;
+    font-size: 1.1rem;
+    color: white;
+    transition: background 0.3s ease-out, color 0.3s ease-out;
+}
+
+section#portfolio .html-css-js .project .site-links a:nth-of-type(1) {
+    left: 0;
+}
+
+section#portfolio .html-css-js .project .site-links a:nth-of-type(2) {
+    right: 0;
+}
+
+section#portfolio .html-css-js .project .site-links button:hover {
+    background: lightgray;
+    color: black;
+    border-color: white;
+}
+
+footer {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem;
+    min-height: 5rem;
+    background: black;
+    flex-shrink: 0;
+}
+
+footer ul {
+    width: 12rem;
+    margin: 0 auto;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+footer .very-bottom {
+    text-align: center;
+    margin: 1rem;
+}
+
+
+@media (max-width: 1236px) {
+    section#about p {
+        width: 45rem;
+
+    }
+    section#portfolio .html-css-js {
+        width: calc(800px + 2rem);
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        grid-template-columns: repeat(2, 390px);
+        grid-template-rows: repeat(6, 225px);
+        grid-gap: 2rem;
+    }
+}
+
+@media (max-width: 850px) {
+    section#about p {
+        width: 40rem;
+        word-spacing: 5px;
+    }
+
+    section#portfolio .html-css-js {
+        width: 400px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        grid-template-columns: repeat(1, 390px);
+        grid-template-rows: repeat(12, 225px);
+        grid-gap: 2rem;
+    }
+}
