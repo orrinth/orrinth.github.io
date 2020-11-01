@@ -249,6 +249,54 @@ section#portfolio .html-css-js .project .site-links button:hover {
     border-color: white;
 }
 
+#project-1 {
+    background: url(images/Rocks.png);
+}
+
+#project-2 {
+    background: url(images/Rocks.png);
+}
+
+#project-3 {
+    background: url(images/Camp\ Life.png)
+}
+
+#project-4 {
+    background: url(images/Calculator.png);
+}
+
+#project-5 {
+    background: url(images/To\ Do\ List.png);
+}
+
+#project-6 {
+    background: url(images/Mood\ Colors.png);
+}
+
+#project-7 {
+    background: url(images/Word\ Analyzer.png);
+}
+
+#project-8 {
+    background: url(images/);
+}
+
+#project-9 {
+    background: url(images/Guess\ the\ Number.png);
+}
+
+#project-10 {
+    background: url(images/Rock\ Paper\ Scissors.png);
+}
+
+#project-11 {
+    background: url(images/Tic\ Tac\ Toe.png);
+}
+
+#project-12 {
+    background: url(images/Vending\ Machine.png);
+}
+
 footer {
     box-sizing: border-box;
     width: 100%;
