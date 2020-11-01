@@ -310,3 +310,20 @@ footer .very-bottom {
         grid-gap: 2rem;
     }
 }
+
+@media (max-width: 576px) {
+    section#about p {
+        width: 30rem;
+        word-spacing: 5px;
+    }
+
+    section#portfolio .html-css-js {
+        width: 400px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        grid-template-columns: repeat(1, 390px);
+        grid-template-rows: repeat(12, 225px);
+        grid-gap: 2rem;
+    }
+}
