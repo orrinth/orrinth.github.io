@@ -175,7 +175,7 @@ section#portfolio .html-css-js {
 }
 
 section#portfolio .html-css-js .project {
-    border: 5px solid darkslategray;
+    border: 5px solid #333;
     border-radius: 5px;
     box-sizing: border-box;
     padding: 1rem;
