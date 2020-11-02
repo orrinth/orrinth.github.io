@@ -35,7 +35,7 @@ nav h1 {
 }
 
 nav ul {
-    width: 35rem;
+    width: 30rem;
     height: inherit;
     margin: 0 auto;
     list-style-type: none;
@@ -164,8 +164,8 @@ section#portfolio h2 {
 }
 
 section#portfolio .html-css-js {
-    max-width: 77rem;
-    min-height: 70rem;
+    width: calc((3 * 390px) + 4rem);
+    min-height: 65rem;
     margin: 0 auto;
     position: relative; 
     display: grid;
@@ -332,7 +332,7 @@ footer .very-bottom {
 
     }
     section#portfolio .html-css-js {
-        width: calc(800px + 2rem);
+        width: calc((2 * 390px) + 2rem);
         left: 0;
         right: 0;
         margin: 0 auto;
@@ -349,24 +349,7 @@ footer .very-bottom {
     }
 
     section#portfolio .html-css-js {
-        width: 400px;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        grid-template-columns: repeat(1, 390px);
-        grid-template-rows: repeat(12, 225px);
-        grid-gap: 2rem;
-    }
-}
-
-@media (max-width: 576px) {
-    section#about p {
-        width: 30rem;
-        word-spacing: 5px;
-    }
-
-    section#portfolio .html-css-js {
-        width: 400px;
+        width: 390px;
         left: 0;
         right: 0;
         margin: 0 auto;
