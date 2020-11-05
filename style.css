@@ -327,10 +327,14 @@ footer .very-bottom {
 
 
 @media (max-width: 1236px) {
-    section#about p {
-        width: 45rem;
-
+    section#about {
+        min-height: 50rem;
     }
+
+    section#about p {
+        width: 35rem;
+    }
+    
     section#portfolio .html-css-js {
         width: calc((2 * 390px) + 2rem);
         left: 0;
@@ -343,9 +347,14 @@ footer .very-bottom {
 }
 
 @media (max-width: 850px) {
+    section#about {
+        min-height: 55rem;
+    }
+
     section#about p {
-        width: 40rem;
+        width: 28rem;
         word-spacing: 5px;
+        text-align: center;
     }
 
     section#portfolio .html-css-js {
