@@ -101,7 +101,7 @@ section#home h1 {
 }
 
 section#about {
-    min-height: 50rem;
+    min-height: 43rem;
     background: #333;
     position: relative;
 }
@@ -327,14 +327,6 @@ footer .very-bottom {
 
 
 @media (max-width: 1236px) {
-    section#about {
-        min-height: 50rem;
-    }
-
-    section#about p {
-        width: 35rem;
-    }
-    
     section#portfolio .html-css-js {
         width: calc((2 * 390px) + 2rem);
         left: 0;
