@@ -117,10 +117,11 @@ section#about h2 {
 section#about p {
     text-align: center;
     text-align-last: center;
-    width: 50rem;
-    font-size: 2rem;
-    margin: 1rem auto;
-    line-height: 1.5;
+    width: 45rem;
+    font-size: 1.9rem;
+    margin: 2rem auto 2rem auto;
+    line-height: 1.2;
+    word-spacing: 4px;
 }
 
 section#about .skill-icons {
@@ -175,7 +176,7 @@ section#portfolio .html-css-js {
 }
 
 section#portfolio .html-css-js .project {
-    border: 5px solid white;
+    border: 5px solid #333;
     border-radius: 5px;
     box-sizing: border-box;
     padding: 1rem;
