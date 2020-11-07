@@ -328,10 +328,6 @@ footer .very-bottom {
 
 
 @media (max-width: 1236px) {
-    section#about {
-        min-height: 45rem;
-    }
-    
     section#portfolio .html-css-js {
         width: calc((2 * 390px) + 2rem);
         left: 0;
