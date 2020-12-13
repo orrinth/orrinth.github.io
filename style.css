@@ -171,7 +171,7 @@ section#portfolio .html-css-js {
     position: relative; 
     display: grid;
     grid-template-columns: repeat(3, 390px);
-    grid-template-rows: repeat(4, 225px);
+    grid-template-rows: repeat(8, 225px);
     grid-gap: 2rem;
 }
 
@@ -334,7 +334,7 @@ footer .very-bottom {
         right: 0;
         margin: 0 auto;
         grid-template-columns: repeat(2, 390px);
-        grid-template-rows: repeat(6, 225px);
+        grid-template-rows: repeat(12, 225px);
         grid-gap: 2rem;
     }
 }
@@ -356,7 +356,7 @@ footer .very-bottom {
         right: 0;
         margin: 0 auto;
         grid-template-columns: repeat(1, 390px);
-        grid-template-rows: repeat(12, 225px);
+        grid-template-rows: repeat(24, 225px);
         grid-gap: 2rem;
     }
 }
