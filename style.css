@@ -140,7 +140,7 @@ section#home {
     background-position: center center;
     background-attachment: scroll;
     position: relative;
-    
+
 }
 
 section#home h1 {
@@ -316,7 +316,7 @@ section#about .skill-icons {
 }
 
 section#portfolio {
-    background: gray;
+    background: dodgerblue;
     min-height: 70rem;
     padding-bottom: 5rem;
 }
