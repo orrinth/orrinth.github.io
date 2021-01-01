@@ -12,11 +12,13 @@ html, body {
     flex-direction: column;
     position: relative;
     background-color: #333;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 nav {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: lightgray;
+    background: linear-gradient(to bottom, #333, black);
     min-height: 5rem;
     display: flex;
     justify-content: space-between;
@@ -24,8 +26,53 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 0 30px 70px black;
+    box-shadow: 0 10px 100px black;
+    box-sizing: border-box;
     z-index: 10;
+    padding: 0 2rem;
+}
+
+nav .logo {
+    min-width: 7rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+nav .logo-middle {
+    width: 3rem;
+    height: 3rem;
+    border: 0.15rem solid white;
+    transform: rotateZ(45deg);
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .logo-middle span {
+    transform: rotateZ(-45deg);
+    font-size: 1.5rem;
+}
+
+nav .logo-side {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 0.1rem solid white;
+    transform: rotateZ(45deg);
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+nav .logo-side span {
+    transform: rotateZ(-45deg);
+    font-size: 0.5rem;
 }
 
 nav h1 {
@@ -36,26 +83,31 @@ nav h1 {
 }
 
 nav ul {
-    width: 30rem;
-    height: inherit;
-    margin: 0 auto;
+    width: 20rem;
+    height: 100%;
     list-style-type: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    height: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 nav ul li a {
-    height: 100%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
-    transition: color 0.2s ease-out, transform 0.2s ease-out;
+    color: white;
+    transition: color 0.3s ease-out, transform 0.3s ease-out;
 }
 
 nav ul li a:hover {
-    color: white;
+    color: skyblue;
     transform: scale(1.2);
 }
 
@@ -82,12 +134,15 @@ main {
 
 section#home {
     height: 46rem;
-    background: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/computer.jpg);
+    background: linear-gradient(to bottom, white 10%, rgba(30, 144, 255, 0.8) 10%, rgba(30, 144, 255, 0.8)), url(images/computer.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: scroll;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section#home h1 {
@@ -99,6 +154,117 @@ section#home h1 {
     text-align: center;
     font-family: 'Bebas Neue', cursive;
     z-index: 1;
+}
+
+.square {
+    animation-name: floatsquare;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    position: absolute;
+    bottom: -2rem;
+}
+
+.square:nth-of-type(even) {
+    width: 2rem;
+    height: 2rem;
+    transform: rotateZ(45deg);
+    background: rgba(255,255,255,0.5);
+}
+
+.square:nth-of-type(odd) {
+    width: 1rem;
+    height: 1rem;
+    transform: rotateZ(45deg);
+    background: rgba(255,255,255,0.5);
+}
+
+.square:nth-of-type(1) {
+    left: calc(6.5% * 1);
+    animation-duration: 16s;
+}
+
+.square:nth-of-type(2) {
+    left: calc(6.5% * 2);
+    animation-duration: 2s;
+}
+
+.square:nth-of-type(3) {
+    left: calc(6.5% * 3);
+    animation-duration: 3s;
+}
+
+.square:nth-of-type(4) {
+    left: calc(6.5% * 4);
+    animation-duration: 4s;
+}
+
+.square:nth-of-type(5) {
+    left: calc(6.5% * 5);
+    animation-duration: 5s;
+}
+
+.square:nth-of-type(6) {
+    left: calc(6.5% * 6);
+    animation-duration: 6s;
+}
+
+.square:nth-of-type(7) {
+    left: calc(6.5% * 7);
+    animation-duration: 7s;
+}
+
+.square:nth-of-type(8) {
+    left: calc(6.5% * 8);
+    animation-duration: 8s;
+}
+
+.square:nth-of-type(9) {
+    left: calc(6.5% * 9);
+    animation-duration: 9s;
+}
+
+.square:nth-of-type(10) {
+    left: calc(6.5% * 10);
+    animation-duration: 10s;
+}
+
+.square:nth-of-type(11) {
+    left: calc(6.5% * 11);
+    animation-duration: 11s;
+}
+
+.square:nth-of-type(12) {
+    left: calc(6.5% * 12);
+    animation-duration: 12s;
+}
+
+.square:nth-of-type(13) {
+    left: calc(6.5% * 13);
+    animation-duration: 13s;
+}
+
+.square:nth-of-type(14) {
+    left: calc(6.5% * 14);
+    animation-duration: 14s;
+}
+
+.square:nth-of-type(15) {
+    left: calc(6.5% * 15);
+    animation-duration: 15s;
+}
+
+@keyframes floatsquare {
+    0% {
+        bottom: -2rem;
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        bottom: 100%;
+        opacity: 0;
+    }
 }
 
 section#about {
