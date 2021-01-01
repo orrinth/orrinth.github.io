@@ -140,9 +140,7 @@ section#home {
     background-position: center center;
     background-attachment: scroll;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 section#home h1 {
@@ -151,6 +149,7 @@ section#home h1 {
     position: relative;
     top: calc(50% - 2.5rem);
     font-size: 4.7rem;
+    font-style: oblique;
     text-align: center;
     font-family: 'Bebas Neue', cursive;
     z-index: 1;
