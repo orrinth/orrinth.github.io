@@ -448,7 +448,7 @@ section#portfolio .html-css-js .project .site-links a:nth-of-type(2) {
 }
 
 section#portfolio .html-css-js .project .site-links button:hover {
-    background: lightgray;
+    background: skyblue;
     color: black;
     border-color: white;
 }
