@@ -75,11 +75,9 @@ nav .logo-side span {
     font-size: 0.5rem;
 }
 
-.burger {
+nav .burger {
     width: 2.5rem;
     height: 2.5rem;
-    outline: 1px solid blue;
-    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -87,7 +85,7 @@ nav .logo-side span {
     display: none;
 }
 
-.burger div {
+nav .burger div {
     width: 100%;
     height: 0.2rem;
     background: white;
@@ -101,7 +99,6 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    outline: 1px solid red;
     background: none;
     position: static;
     transform: translateX(0%);
@@ -129,19 +126,19 @@ nav ul {
     }
 }
 
+nav ul li {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 nav ul li a {
     font-size: 1.2rem;
     text-decoration: none;
     text-transform: uppercase;
     color: white;
     transition: background 0.2s ease-out, color 0.3s ease-out, transform 0.3s ease-out;
-}
-
-nav ul li {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 nav ul li a:hover {
@@ -613,7 +610,7 @@ footer .very-bottom {
         grid-gap: 2rem;
     }
 
-    .burger {
+    nav .burger {
         display: flex;
     }
     
