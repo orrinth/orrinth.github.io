@@ -194,6 +194,7 @@ section#home h1 {
     animation-name: floatsquare;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
+    animation-delay: 2s;
     position: absolute;
     bottom: -2rem;
 }
