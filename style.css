@@ -1,663 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap');
+
+/*Basic styles*/
 * {
     margin: 0;
     padding: 0;
 }
 
 html, body {
-    font-family: 'Oswald', sans-serif;
-    color: white;
+    background: #111;
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    background-color: #333;
+    min-height: 100vh;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
 }
 
-nav {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: linear-gradient(to bottom, #333, black);
+/*Main styles*/
+main {
+    flex: 1 0 auto;
+    background: #111;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 0.8), rgba(17, 17, 17, 0.8)), url(images/computer-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Home styles*/
+#home {
+    width: 100%;
+    min-height: 46rem;
+    box-sizing: border-box;
+    padding: 3rem 5rem;
+    position: relative;
+}
+
+.top-bar {
+    width: 100%;
     min-height: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    box-shadow: 0 10px 100px black;
-    box-sizing: border-box;
-    z-index: 10;
-    padding: 0 2rem;
 }
 
-nav .logo {
-    min-width: 7rem;
+.logo {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border: 0.5rem double teal;
+    padding: 0.8rem;
+    background: #111;
+    outline: 0.2rem solid white;
+    box-sizing: border-box;
+}
+
+.fa-bars {
+    font-size: 2rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.words {
+    margin: 5rem 0;
+}
+
+.words .line1 {
+    font-size: 3.2rem;
+    font-size: calc(49px + (75 - 49) * ((100vw - 576px) / (7500 - 576)));
+}
+
+.words .line2 {
+    font-size: 2rem;
+    font-size: calc(25px + (35 - 25) * ((100vw - 576px) / (7500 - 576)));
+    margin-top: 1rem;
+}
+
+#portfolio-button {
+    display: inline-block;
+    padding: 1rem;
+    background: teal;
+    text-decoration: none;
+    color: white;
+    border-radius: 1px;
+    margin-top: 0.5rem;
+    transition: background 0.3s ease-out, color 0.3s ease-out;
+}
+
+#portfolio-button:hover {
+    background: white;
+    color: #111;
+}
+
+/*Sidebar styles*/
+nav {
+    width: 9rem;
+    height: 100%;
+    background: teal;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    transform: translateX(200%);
+    transition: transform 0.5s linear;
+}
+
+.fa-times {
+    font-size: 1.6rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
+}
+
+.nav-links {
+    width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: default;
-}
-
-nav .logo-middle {
-    width: 3rem;
-    height: 3rem;
-    border: 0.15rem solid white;
-    transform: rotateZ(45deg);
-    background: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav .logo-middle span {
-    transform: rotateZ(-45deg);
-    font-size: 1.5rem;
-}
-
-nav .logo-side {
-    width: 1.5rem;
-    height: 1.5rem;
-    border: 0.1rem solid white;
-    transform: rotateZ(45deg);
-    background: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-}
-
-nav .logo-side span {
-    transform: rotateZ(-45deg);
-    font-size: 0.5rem;
-}
-
-nav .burger {
-    width: 2.5rem;
-    height: 2.5rem;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    cursor: pointer;
-    display: none;
-}
-
-nav .burger div {
-    width: 100%;
-    height: 0.2rem;
-    background: white;
-    border: 1px solid white;
-}
-
-nav ul {
-    width: 20rem;
-    height: 100%;
     list-style-type: none;
+}
+
+.nav-links li {
+    width: 100%;
+}
+
+.nav-links a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    transition: background 0.3s ease-out, color 0.3s ease-out;
+}
+
+.nav-links a:hover {
+    background: white;
+    color: #111;
+}
+
+/*Technologies styles*/
+#techno {
+    width: 100%;
+    min-height: 30rem;
+    background: rgb(0, 94, 94);
+    background: teal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem 5rem;
+    box-sizing: border-box;
+    border-top: 0.5rem solid white;
+    border-bottom: 0.5rem solid white;
+}
+
+#techno h2 {
+    text-align: center;
+}
+
+.tech-known, 
+.tech-learning {
+    width: 10rem;
+    font-size: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: none;
-    position: static;
-    transform: translateX(0%);
-}
-
-@keyframes navLinksFadeIn {
-    from {
-        transform: translateX(-200%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0%);
-        opacity: 1;
-    }
-}
-
-@keyframes navLinksFadeOut {
-    from {
-        transform: translateX(0%);
-        opacity: 1;
-    }
-    to {
-        transform: translateX(-200%);
-        opacity: 0;
-    }
-}
-
-nav ul li {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav ul li a {
-    font-size: 1.2rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-    transition: background 0.2s ease-out, color 0.3s ease-out, transform 0.3s ease-out;
-}
-
-nav ul li a:hover {
-    color: skyblue;
-    transform: scale(1.2);
-}
-
-main {
-    flex: 1 0 auto;
-    min-height: 100%;
-    width: 100%;
-}
-
-.overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0,0,0,0.8);
-    opacity: 0;
-    transition: opacity 0.2s ease-out;
-}
-
-.overlay:hover {
-    opacity: 1;
-}
-
-section#home {
-    height: 46rem;
-    background: linear-gradient(to bottom, white 10%, rgba(30, 144, 255, 0.8) 10%, rgba(30, 144, 255, 0.8)), url(images/computer.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: scroll;
-    position: relative;
-
-}
-
-section#home h1 {
-    height: 5rem;
-    margin: 0 auto;
-    position: relative;
-    top: calc(50% - 2.5rem);
-    font-size: 4.7rem;
-    font-style: oblique;
-    text-align: center;
-    font-family: 'Bebas Neue', cursive;
-    z-index: 1;
-}
-
-.square {
-    animation-name: floatsquare;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-    animation-delay: 2s;
-    position: absolute;
-    bottom: -2rem;
-}
-
-.square:nth-of-type(even) {
-    width: 2rem;
-    height: 2rem;
-    transform: rotateZ(45deg);
-    background: rgba(255,255,255,0.5);
-}
-
-.square:nth-of-type(odd) {
-    width: 1rem;
-    height: 1rem;
-    transform: rotateZ(45deg);
-    background: rgba(255,255,255,0.5);
-}
-
-.square:nth-of-type(1) {
-    left: calc(6.5% * 1);
-    animation-duration: 16s;
-}
-
-.square:nth-of-type(2) {
-    left: calc(6.5% * 2);
-    animation-duration: 2s;
-}
-
-.square:nth-of-type(3) {
-    left: calc(6.5% * 3);
-    animation-duration: 3s;
-}
-
-.square:nth-of-type(4) {
-    left: calc(6.5% * 4);
-    animation-duration: 4s;
-}
-
-.square:nth-of-type(5) {
-    left: calc(6.5% * 5);
-    animation-duration: 5s;
-}
-
-.square:nth-of-type(6) {
-    left: calc(6.5% * 6);
-    animation-duration: 6s;
-}
-
-.square:nth-of-type(7) {
-    left: calc(6.5% * 7);
-    animation-duration: 7s;
-}
-
-.square:nth-of-type(8) {
-    left: calc(6.5% * 8);
-    animation-duration: 8s;
-}
-
-.square:nth-of-type(9) {
-    left: calc(6.5% * 9);
-    animation-duration: 9s;
-}
-
-.square:nth-of-type(10) {
-    left: calc(6.5% * 10);
-    animation-duration: 10s;
-}
-
-.square:nth-of-type(11) {
-    left: calc(6.5% * 11);
-    animation-duration: 11s;
-}
-
-.square:nth-of-type(12) {
-    left: calc(6.5% * 12);
-    animation-duration: 12s;
-}
-
-.square:nth-of-type(13) {
-    left: calc(6.5% * 13);
-    animation-duration: 13s;
-}
-
-.square:nth-of-type(14) {
-    left: calc(6.5% * 14);
-    animation-duration: 14s;
-}
-
-.square:nth-of-type(15) {
-    left: calc(6.5% * 15);
-    animation-duration: 15s;
-}
-
-@keyframes floatsquare {
-    0% {
-        bottom: -2rem;
-        opacity: 1;
-    }
-    80% {
-        opacity: 0;
-    }
-    100% {
-        bottom: 100%;
-        opacity: 0;
-    }
-}
-
-section#about {
-    min-height: 46rem;
-    background: #333;
-    position: relative;
-}
-
-section#about h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    font-style: oblique;
-    padding-top: 5rem;
-}
-
-section#about p {
-    text-align: center;
-    text-align-last: center;
-    width: 45rem;
-    font-size: 1.9rem;
-    margin: 2rem auto 2rem auto;
-    line-height: 1.2;
-    word-spacing: 4px;
-}
-
-section#about .skill-icons {
-    width: 21.5rem;
-    position: absolute;
-    bottom: 5rem;
-    left: calc(50% - 10.75rem);
 }
 
 .fa-html5 {
     color: orangered;
-    font-size: 5rem;
-    margin: 0 1.5rem;
 }
 
 .fa-css3-alt {
-    color: #2690d4;
-    font-size: 5rem;
-    margin: 0 1.5rem;
+    color: dodgerblue;
 }
 
 .fa-js {
     color: gold;
-    font-size: 5rem;
-    margin: 0 1.5rem;
 }
 
-section#portfolio {
-    background: dodgerblue;
-    min-height: 70rem;
-    padding-bottom: 5rem;
+.fa-bootstrap {
+    color: purple;
 }
 
-section#portfolio h2 {
+.fa-react {
+    color: cyan;
+}
+
+.fa-git-alt {
+    color: orangered;
+}
+
+
+/*Portfolio styles*/
+#portfolio {
+    width: 100%;
+    height: 100%;
+    padding: 3rem 0;
     text-align: center;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    font-style: oblique;
-    padding-top: 5rem;
-    margin-bottom: 1rem;
 }
 
-section#portfolio .html-css-js {
-    width: calc((3 * 390px) + 4rem);
-    min-height: 65rem;
-    margin: 0 auto;
-    position: relative; 
+.projects {
+    width: calc(900px + 2rem);
+    max-height: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 390px);
-    grid-template-rows: repeat(8, 225px);
-    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(8, 200px);
+    grid-gap: 1rem;
+    margin: 3rem auto;
 }
 
-section#portfolio .html-css-js .project {
-    border: 5px solid #333;
-    border-radius: 5px;
+.project {
+    width: 300px;
+    height: 200px;
     box-sizing: border-box;
-    padding: 1rem;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top ;
-    background-color: #333;
-    padding-bottom: 5rem;
-    font-size: 1.2rem;
+    border: 0.2rem solid white;
+    border-radius: 1px;
     position: relative;
-    box-shadow: 0 5px 20px black;
+    background-color: white;
 }
 
-section#portfolio .html-css-js .project h3 {
-    text-align: center;
-    margin-top: 1rem;
-}
-
-section#portfolio .html-css-js .project hr {
-    background: white;
-    border: none;
-    width: 14rem;
-    height: 1px;
-    margin: 0.5rem auto;
-}
-
-section#portfolio .html-css-js .project-description {
-    font-style: italic;
-}
-
-section#portfolio .html-css-js .project .site-links {
-    width: 10rem;
-    height: 5rem;
+.project .overlay {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: calc(50% - 2.5rem);
-    left: calc(50% - 5rem);
+    z-index: 11;
+    top: 0;
+    left: 0;
+    background: rgba(17,17,17,0.5);
+}
+
+.project hr {
+    width: 80%;
+    height: 1px;
+    background: white;
     margin: 0 auto;
+    border: none;
 }
 
-a {
-    text-decoration: none;
-}
-
-button {
-    width: 10rem;
-    height: 2rem;
-    border: 2px solid white;
-    border-radius: 10rem;
-    background: rgba(0,0,0,0);
-    cursor: pointer;
+.project a {
+    display: block;
+    width: 100%;
     box-sizing: border-box;
     text-decoration: none;
-    text-align: center;
-    display: block;
-    margin: 0 auto 0.5rem;
-    font-size: 1.1rem;
+    background: teal;
+    padding: 0 0.5rem;
     color: white;
     transition: background 0.3s ease-out, color 0.3s ease-out;
+    position: absolute;
+    z-index: 12;
+    text-align: center;
 }
 
-section#portfolio .html-css-js .project .site-links a:nth-of-type(1) {
+.project a:nth-of-type(1) {
     left: 0;
-}
-
-section#portfolio .html-css-js .project .site-links a:nth-of-type(2) {
     right: 0;
+    bottom: calc(24.6px);
 }
 
-section#portfolio .html-css-js .project .site-links button:hover {
-    background: skyblue;
-    color: black;
-    border-color: white;
+.project a:nth-of-type(2) {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 0.2rem solid #111;
+}
+
+.project a:hover {
+    background: white;
+    color: #111;
 }
 
 #project-1 {
     background: url(images/Chocolate\ Website.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 #project-2 {
     background: url(images/Rocks.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 #project-3 {
-    background: url(images/Camp\ Life.png)
+    background: url(images/Camp\ Life.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 #project-4 {
     background: url(images/Save\ Bees.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 #project-5 {
     background: url(images/Wave\ Riders.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 #project-6 {
-    background: url(images/Violin.png)
+    background: url(images/Violin.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 #project-7 {
     background: url(images/FruitApples.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 #project-8 {
     background: url(images/Pears.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 #project-9 {
     background: url(images/Oranges.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 #project-10 {
     background: url(images/Cat\ Dog\ Quiz.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 #project-11 {
     background: url(images/Converter.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 #project-12 {
     background: url(images/Fortunes.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 #project-13 {
     background: url(images/Lamplight.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 #project-14 {
     background: url(images/Magic\ Eight\ Ball.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 #project-15 {
     background: url(images/Clock.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 #project-16 {
     background: url(images/Calculator.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 #project-17 {
     background: url(images/To\ Do\ List.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 #project-18 {
     background: url(images/Mood\ Colors.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 #project-19 {
     background: url(images/Word\ Analyzer.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 #project-20 {
     background: url(images/Tree\ Guessing\ Game.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 #project-21 {
     background: url(images/Guess\ the\ Number.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 #project-22 {
     background: url(images/Rock\ Paper\ Scissors.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 #project-23 {
     background: url(images/Tic\ Tac\ Toe.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 #project-24 {
     background: url(images/Vending\ Machine.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
+
+/*Footer styles*/
 footer {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 1rem;
-    min-height: 5rem;
-    background: black;
     flex-shrink: 0;
-}
-
-footer ul {
-    width: 12rem;
-    margin: 0 auto;
-    list-style-type: none;
+    width: 100%;
+    min-height: 5rem;
+    font-size: 0.8rem;
+    font-size: calc(14px + (25 - 14) * ((100vw - 576px) / (7500 - 576)));
+    background: teal;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 
-footer ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-}
-
-footer .very-bottom {
-    text-align: center;
-    margin: 1rem;
-}
-
-
-@media (max-width: 1236px) {
-    section#portfolio .html-css-js {
-        width: calc((2 * 390px) + 2rem);
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        grid-template-columns: repeat(2, 390px);
-        grid-template-rows: repeat(12, 225px);
-        grid-gap: 2rem;
+@media (max-width: 970px) {
+    .projects {
+        width: calc(600px + 1rem);
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(12, 200px);
     }
 }
 
-@media (max-width: 850px) {
-    section#about {
-        min-height: 55rem;
-    }
-
-    section#about p {
-        width: 28rem;
-        word-spacing: 5px;
-        text-align: center;
-    }
-
-    section#portfolio .html-css-js {
-        width: 390px;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        grid-template-columns: repeat(1, 390px);
-        grid-template-rows: repeat(24, 225px);
-        grid-gap: 2rem;
-    }
-
-    nav .burger {
-        display: flex;
-    }
-    
-    nav ul {
-        width: 100%;
-        height: 9rem;
-        flex-direction: column;
-        justify-content: center;
-        box-sizing: border-box;
-        position: absolute;
-        top: 5rem;
-        left: 0;
-        transform: translateX(-200%);
-    }
-
-    nav ul li {
-        width: 100%;
-        height: 3rem;
-        background: lightgray;
-        border-bottom: 1px solid white;
-        justify-content: flex-start;
-        padding: 0 1rem;
-        cursor: pointer;
-        transition: background 0.5s ease, color 0.5s ease;
+@media (max-width: 660px) {
+    .words {
         position: relative;
+        top: calc()
     }
-
-    nav ul li:nth-of-type(3) {
-        border: none;
-    }
-
-    nav ul li:hover {
-        background: skyblue;
-        color: black;
-    }
-
-    nav ul li a {
-        width: 100%;
-        height: 100%;
-        padding: 0 1rem;
-        display: flex;
-        align-items: center;
-    }
-
-    nav ul li a:hover {
-        color: black;
-        transform: none;
+    .projects {
+        width: 300px;
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(24, 200px);
     }
 }

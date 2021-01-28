@@ -4,370 +4,357 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Orrin">
-        <meta name="description" content="Orrin's Portfolio is a web development portfolio filled with projects made by Orrin.">
-        <meta name="keywords" content="Portfolio, Web Development">
+        <meta name="description" content="New portfolio site">
+        <meta name="keywords" content="portfolio">
         <title>Orrin's Portfolio</title>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" 
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
         <script src="mysite.js" defer></script>
     </head>
     <body>
-        <nav>
-            <div class="logo">
-                <div class="logo-side"><span>WEB</span></div>
-                <div class="logo-middle"><span>OH</span></div>
-                <div class="logo-side"><span>DEV</span></div>
-            </div>
-            <ul>
-                <li><a href="#home" target="_self">Home</a></li>
-                <li><a href="#about" target="_self">About</a></li>
-                <li><a href="#portfolio" target="_self">Portfolio</a></li>
-            </ul>
-            <div class="burger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </nav>
         <main>
             <section id="home">
-                <h1>Hi, I'm Orrin. I make websites and web projects.</h1>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
+                <div class="home top-bar">
+                    <a href="#home"><h1 class="logo">Orrinth</h1></a>
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <div class="home words">
+                    <h2 class="line1" data-aos="fade-right">Looking for a front end developer?</h2>
+                    <h2 class="line1" data-aos="fade-right">Look no further.</h2>
+                    <h3 class="line2" data-aos="fade-right">My name is Orrin and I've got the skills you need.</h3>
+                    <div data-aos="fade-right"><a href="#portfolio" id="portfolio-button">My portfolio</a></div>
+                </div>
+                
+                <nav>
+                    <i class="fas fa-times"></i>
+                    <ul class="nav-links">
+                        <li><a href="#home" target="_self">Home</a></li>
+                        <li><a href="#techno" target="_self">Technologies</a></li>
+                        <li><a href="#portfolio" target="_self">Portfolio</a></li>
+                    </ul>
+                </nav>
             </section>
 
-            <section id="about">
-                <h2>About</h2>
-                <p>
-                    I'm a self-taught developer with considerable experience in HTML5, CSS3 and JavaScript.
-                    I love to learn, and am currently exploring Bootstrap and JavaScript APIs. 
-                </p>
-                <p>
-                    I'm also a college student majoring in Web Development, but
-                    I code both in and out of the classroom because it brings me great
-                    happiness and makes me feel accomplished.
-                    It also gives me the chance to continue leveling up my coding skills!
-                </p>
-
-                <div class="skill-icons">
+            <section id="techno">
+                <h2 data-aos="fade-up">Technologies I know</h2>
+                <div data-aos="fade-up" class="tech-known">
                     <i class="fab fa-html5"></i>
                     <i class="fab fa-css3-alt"></i>
                     <i class="fab fa-js"></i>
+                </div>
+
+                <h2 data-aos="fade-up">Technologies I'm learning</h2>
+                <div data-aos="fade-up" class="tech-learning">
+                    <i class="fab fa-bootstrap"></i>
+                    <i class="fab fa-react"></i>
+                    <i class="fab fa-git-alt"></i>
                 </div>
             </section>
 
             <section id="portfolio">
                 <h2>Portfolio</h2>
-                <div class="html-css-js">
-                    <div class="project" id="project-1">
+                <div class="projects">
+                    <div class="project" data-aos="fade-up" id="project-1">
                         <div class="overlay">
                             <h3>Chocolate Website</h3>
                             <hr>
                             
                             <div class="site-links hide-site-links">
-                                <a href="https://orrinth.github.io/chocolate/" target="_blank"><button>See Site</button></a>
-                                <a href="https://github.com/orrinth/chocolate" target="_blank"><button>See Code</button></a>
+                                <a href="https://orrinth.github.io/chocolate/" target="_blank">See Site</a>
+                                <a href="https://github.com/orrinth/chocolate" target="_blank">See Code</a>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="project" id="project-2">
+                    <div class="project" data-aos="fade-up" id="project-2">
                         <div class="overlay">
                             <h3>Rock Website</h3>
                             <hr>
                             
                             <div class="site-links hide-site-links">
-                                <a href="https://orrinth.github.io/rock-website/" target="_blank"><button>See Site</button></a>
-                                <a href="https://github.com/orrinth/rock-website" target="_blank"><button>See Code</button></a>
+                                <a href="https://orrinth.github.io/rock-website/" target="_blank">See Site</a>
+                                <a href="https://github.com/orrinth/rock-website" target="_blank">See Code</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project" id="project-3">
+                    <div class="project" data-aos="fade-up" id="project-3">
                         <div class="overlay">
                             <h3>Camping Landing Page</h3>
                             <hr>
                             
                             <div class="site-links hide-site-links">
-                                <a href="https://orrinth.github.io/camp-life/" target="_blank"><button>See Site</button></a>
-                                <a href="https://github.com/orrinth/camp-life" target="_blank"><button>See Code</button></a>
+                                <a href="https://orrinth.github.io/camp-life/" target="_blank">See Site</a>
+                                <a href="https://github.com/orrinth/camp-life" target="_blank">See Code</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project" id="project-4">
+                    <div class="project" data-aos="fade-up" id="project-4">
                         <div class="overlay">
                             <h3>Bees Landing Page</h3>
                             <hr>
                             
                             <div class="site-links hide-site-links">
-                                <a href="https://orrinth.github.io/bee-landing-page/" target="_blank"><button>See Site</button></a>
-                                <a href="https://github.com/orrinth/bee-landing-page" target="_blank"><button>See Code</button></a>
+                                <a href="https://orrinth.github.io/bee-landing-page/" target="_blank">See Site</a>
+                                <a href="https://github.com/orrinth/bee-landing-page" target="_blank">See Code</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project" id="project-5">
+                    <div class="project" data-aos="fade-up" id="project-5">
                         <div class="overlay">
                             <h3>Wave Riders Landing Page</h3>
                             <hr>
                             
                             <div class="site-links hide-site-links">
-                                <a href="https://orrinth.github.io/wave-riders-landing-page/" target="_blank"><button>See Site</button></a>
-                                <a href="https://github.com/orrinth/wave-riders-landing-page" target="_blank"><button>See Code</button></a>
+                                <a href="https://orrinth.github.io/wave-riders-landing-page/" target="_blank">See Site</a>
+                                <a href="https://github.com/orrinth/wave-riders-landing-page" target="_blank">See Code</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project" id="project-6">
+                    <div class="project" data-aos="fade-up" id="project-6">
                         <div class="overlay">
                             <h3>Violin Landing Page</h3>
                             <hr>
                             
                             <div class="site-links hide-site-links">
-                                <a href="https://orrinth.github.io/violin-landing-page/" target="_blank"><button>See Site</button></a>
-                                <a href="https://github.com/orrinth/violin-landing-page" target="_blank"><button>See Code</button></a>
+                                <a href="https://orrinth.github.io/violin-landing-page/" target="_blank">See Site</a>
+                                <a href="https://github.com/orrinth/violin-landing-page" target="_blank">See Code</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project" id="project-7">
+                    <div class="project" data-aos="fade-up" id="project-7">
                         <div class="overlay">
                             <h3>Apples Landing Page</h3>
                             <hr>
                             
                             <div class="site-links hide-site-links">
-                                <a href="https://orrinth.github.io/apples-landing-page/" target="_blank"><button>See Site</button></a>
-                                <a href="https://github.com/orrinth/apples-landing-page" target="_blank"><button>See Code</button></a>
+                                <a href="https://orrinth.github.io/apples-landing-page/" target="_blank">See Site</a>
+                                <a href="https://github.com/orrinth/apples-landing-page" target="_blank">See Code</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project" id="project-8">
+                    <div class="project" data-aos="fade-up" id="project-8">
                         <div class="overlay">
                             <h3>Pears Landing Page</h3>
                             <hr>
                             
                             <div class="site-links hide-site-links">
-                                <a href="https://orrinth.github.io/pears-landing-page/" target="_blank"><button>See Site</button></a>
-                                <a href="https://github.com/orrinth/pears-landing-page" target="_blank"><button>See Code</button></a>
+                                <a href="https://orrinth.github.io/pears-landing-page/" target="_blank">See Site</a>
+                                <a href="https://github.com/orrinth/pears-landing-page" target="_blank">See Code</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project" id="project-9">
+                    <div class="project" data-aos="fade-up" id="project-9">
                         <div class="overlay">
                             <h3>Oranges Landing Page</h3>
                             <hr>
                             
                             <div class="site-links hide-site-links">
-                                <a href="https://orrinth.github.io/oranges/" target="_blank"><button>See Site</button></a>
-                                <a href="https://github.com/orrinth/oranges" target="_blank"><button>See Code</button></a>
+                                <a href="https://orrinth.github.io/oranges/" target="_blank">See Site</a>
+                                <a href="https://github.com/orrinth/oranges" target="_blank">See Code</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project" id="project-10">
+                    <div class="project" data-aos="fade-up" id="project-10">
                         <div class="overlay">
                             <h3>Cat or Dog Person Quiz</h3>
                             <hr>
                             
                             <div class="site-links hide-site-links">
-                                <a href="https://orrinth.github.io/cat-dog-quiz/" target="_blank"><button>See Site</button></a>
-                                <a href="https://github.com/orrinth/cat-dog-quiz" target="_blank"><button>See Code</button></a>
+                                <a href="https://orrinth.github.io/cat-dog-quiz/" target="_blank">See Site</a>
+                                <a href="https://github.com/orrinth/cat-dog-quiz" target="_blank">See Code</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project" id="project-11">
+                    <div class="project" data-aos="fade-up" id="project-11">
                         <div class="overlay">
                             <h3>Mph to Kt Converter</h3>
                             <hr>
                             
                             <div class="site-links hide-site-links">
-                                <a href="https://orrinth.github.io/converter/" target="_blank"><button>See Site</button></a>
-                                <a href="https://github.com/orrinth/converter" target="_blank"><button>See Code</button></a>
+                                <a href="https://orrinth.github.io/converter/" target="_blank">See Site</a>
+                                <a href="https://github.com/orrinth/converter" target="_blank">See Code</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project" id="project-12">
+                    <div class="project" data-aos="fade-up" id="project-12">
                         <div class="overlay">
                             <h3>Fortunes</h3>
                             <hr>
                             
                             <div class="site-links hide-site-links">
-                                <a href="https://orrinth.github.io/many-fortunes/" target="_blank"><button>See Site</button></a>
-                                <a href="https://github.com/orrinth/many-fortunes" target="_blank"><button>See Code</button></a>
+                                <a href="https://orrinth.github.io/many-fortunes/" target="_blank">See Site</a>
+                                <a href="https://github.com/orrinth/many-fortunes" target="_blank">See Code</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project" id="project-13">
+                    <div class="project" data-aos="fade-up" id="project-13">
                         <div class="overlay">
                             <h3>Lamp</h3>
                             <hr>
                             
                             <div class="site-links hide-site-links">
-                                <a href="https://orrinth.github.io/lamplight/" target="_blank"><button>See Site</button></a>
-                                <a href="https://github.com/orrinth/lamplight" target="_blank"><button>See Code</button></a>
+                                <a href="https://orrinth.github.io/lamplight/" target="_blank">See Site</a>
+                                <a href="https://github.com/orrinth/lamplight" target="_blank">See Code</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project" id="project-14">
+                    <div class="project" data-aos="fade-up" id="project-14">
                         <div class="overlay">
                             <h3>Magic 8-Ball</h3>
                             <hr>
                             
                             <div class="site-links hide-site-links">
-                                <a href="https://orrinth.github.io/magic-eight-ball/" target="_blank"><button>See Site</button></a>
-                                <a href="https://github.com/orrinth/magic-eight-ball" target="_blank"><button>See Code</button></a>
+                                <a href="https://orrinth.github.io/magic-eight-ball/" target="_blank">See Site</a>
+                                <a href="https://github.com/orrinth/magic-eight-ball" target="_blank">See Code</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project" id="project-15">
+                    <div class="project" data-aos="fade-up" id="project-15">
                         <div class="overlay">
                             <h3>Clock</h3>
                             <hr>
                             
                             <div class="site-links hide-site-links">
-                                <a href="https://orrinth.github.io/clock/" target="_blank"><button>See Site</button></a>
-                                <a href="https://github.com/orrinth/clock" target="_blank"><button>See Code</button></a>
+                                <a href="https://orrinth.github.io/clock/" target="_blank">See Site</a>
+                                <a href="https://github.com/orrinth/clock" target="_blank">See Code</a>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="project" id="project-16">
+                    <div class="project" data-aos="fade-up" id="project-16">
                         <div class="overlay">
                             <h3>Calculator</h3>
                             <hr>
                             
                             <div class="site-links hide-site-links">
-                                <a href="https://orrinth.github.io/calculator/" target="_blank"><button>See Site</button></a>
-                                <a href="https://github.com/orrinth/calculator" target="_blank"><button>See Code</button></a>
+                                <a href="https://orrinth.github.io/calculator/" target="_blank">See Site</a>
+                                <a href="https://github.com/orrinth/calculator" target="_blank">See Code</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project" id="project-17">
+                    <div class="project" data-aos="fade-up" id="project-17">
                         <div class="overlay">
                             <h3>To Do List</h3>
                             <hr>
                             
                             <div class="site-links hide-site-links">
-                                <a href="https://orrinth.github.io/to-do-list/" target="_blank"><button>See Site</button></a>
-                                <a href="https://github.com/orrinth/to-do-list" target="_blank"><button>See Code</button></a>
+                                <a href="https://orrinth.github.io/to-do-list/" target="_blank">See Site</a>
+                                <a href="https://github.com/orrinth/to-do-list" target="_blank">See Code</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project" id="project-18">
+                    <div class="project" data-aos="fade-up" id="project-18">
                         <div class="overlay">
                             <h3>Mood Colors</h3>
                             <hr>
                             
                             <div class="site-links hide-site-links">
-                                <a href="https://orrinth.github.io/mood-colors/" target="_blank"><button>See Site</button></a>
-                                <a href="https://github.com/orrinth/mood-colors" target="_blank"><button>See Code</button></a>
+                                <a href="https://orrinth.github.io/mood-colors/" target="_blank">See Site</a>
+                                <a href="https://github.com/orrinth/mood-colors" target="_blank">See Code</a>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="project" id="project-19">
+                    <div class="project" data-aos="fade-up" id="project-19">
                         <div class="overlay">
                             <h3>Word Analyzer</h3>
                             <hr>
                             
                             <div class="site-links hide-site-links">
-                                <a href="https://orrinth.github.io/word-analyzer/" target="_blank"><button>See Site</button></a>
-                                <a href="https://github.com/orrinth/word-analyzer" target="_blank"><button>See Code</button></a>
+                                <a href="https://orrinth.github.io/word-analyzer/" target="_blank">See Site</a>
+                                <a href="https://github.com/orrinth/word-analyzer" target="_blank">See Code</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project" id="project-20">
+                    <div class="project" data-aos="fade-up" id="project-20">
                         <div class="overlay">
                             <h3>Tree-Guessing Game</h3>
                             <hr>
                             
                             <div class="site-links hide-site-links">
-                                <a href="https://orrinth.github.io/tree-guessing-game/" target="_blank"><button>See Site</button></a>
-                                <a href="https://github.com/orrinth/tree-guessing-game" target="_blank"><button>See Code</button></a>
+                                <a href="https://orrinth.github.io/tree-guessing-game/" target="_blank">See Site</a>
+                                <a href="https://github.com/orrinth/tree-guessing-game" target="_blank">See Code</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project" id="project-21">
+                    <div class="project" data-aos="fade-up" id="project-21">
                         <div class="overlay">
                             <h3>Guess the Number</h3>
                             <hr>
                             
                             <div class="site-links hide-site-links">
-                                <a href="https://orrinth.github.io/guess-the-number/" target="_blank"><button>See Site</button></a>
-                                <a href="https://github.com/orrinth/guess-the-number" target="_blank"><button>See Code</button></a>
+                                <a href="https://orrinth.github.io/guess-the-number/" target="_blank">See Site</a>
+                                <a href="https://github.com/orrinth/guess-the-number" target="_blank">See Code</a>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="project" id="project-22">
+                    <div class="project" data-aos="fade-up" id="project-22">
                         <div class="overlay">
                             <h3>Rock Paper Scissors</h3>
                             <hr>
                             
                             <div class="site-links hide-site-links">
-                                <a href="https://orrinth.github.io/rock-paper-scissors/" target="_blank"><button>See Site</button></a>
-                                <a href="https://github.com/orrinth/rock-paper-scissors" target="_blank"><button>See Code</button></a>
+                                <a href="https://orrinth.github.io/rock-paper-scissors/" target="_blank">See Site</a>
+                                <a href="https://github.com/orrinth/rock-paper-scissors" target="_blank">See Code</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project" id="project-23">
+                    <div class="project" data-aos="fade-up" id="project-23">
                         <div class="overlay">
                             <h3>Tic Tac Toe</h3>
                             <hr>
                             
                             <div class="site-links hide-site-links">
-                                <a href="https://orrinth.github.io/tic-tac-toe/" target="_blank"><button>See Site</button></a>
-                                <a href="https://github.com/orrinth/tic-tac-toe" target="_blank"><button>See Code</button></a>
+                                <a href="https://orrinth.github.io/tic-tac-toe/" target="_blank">See Site</a>
+                                <a href="https://github.com/orrinth/tic-tac-toe" target="_blank">See Code</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="project" id="project-24">
+                    <div class="project" data-aos="fade-up" id="project-24">
                         <div class="overlay">
                             <h3>Vending Machine</h3>
                             <hr>
                             
                             <div class="site-links hide-site-links">
-                                <a href="https://orrinth.github.io/vending-machine/" target="_blank"><button>See Site</button></a>
-                                <a href="https://github.com/orrinth/vending-machine" target="_blank"><button>See Code</button></a>
+                                <a href="https://orrinth.github.io/vending-machine/" target="_blank">See Site</a>
+                                <a href="https://github.com/orrinth/vending-machine" target="_blank">See Code</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
+
         <footer>
-            <div class="very-bottom">
-                <p>Created by orrinth. &copy; Copyright 2020. All Rights Reserved.</p>
-            </div>
+            <h4>Created by orrinth. &copy; Copyright 2021. All Rights Reserved.</h4>
         </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
