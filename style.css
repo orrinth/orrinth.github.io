@@ -249,7 +249,7 @@ nav {
 
 .project a {
     display: block;
-    width: 100%;
+    width: 50%;
     box-sizing: border-box;
     text-decoration: none;
     background: teal;
